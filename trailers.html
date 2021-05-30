@@ -1,24 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <link rel="stylesheet" href="sass/css/main.css"> <!--Carga de estilo CSS externo-->
+<head>
+    <link rel="stylesheet" href="sass/css/main.css"> <!--Carga de estilo CSS externo-->
+	<meta charset="UTF-8">
+	<title>El Nacimiento</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     
-        <meta charset="UTF-8">
-        <title>El Nacimiento</title>
-    
-        <!--Carga de fuentes web-->
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Parisienne&family=Roboto:wght@300&display=swap" rel="stylesheet">
-        <!--Fin de carga de fuentes web-->
-    <!--Carga Bootstrap-->
+<!--Carga de fuentes web-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Parisienne&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merienda&display=swap" rel="stylesheet">
+<!--Fin de carga de fuentes web-->
+
+<!--Carga Bootstrap-->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 <!--Fin de carga Bootstrap-->
 
 </head>
 <body>
-    <header >
+    <header>
         <span id="logo">
-            <img src="imagenes/logo.jpg" href="index.html" alt="logo">
+            <img src="imagenes/logo.png" href="index.html" alt="logo">
         </span>
         <span>
             <h1 id="titulo"> 
@@ -26,36 +31,26 @@
                 de María Valeria Irastorza
             </h1>
           </span>
-        <span id=datos>
-            <p>
-                General Roca 454 <br>
-                Barrio General Mosconi <br>
-                Comodoro Rivadavia - Chubut <br>
-                27-22323390-8
-            </p>
-          </span>
     </header>
-    <hr>
-    <h2>Trailers</h2>
-    <div id="nav">
-        <div class="navegacion">
-            <span class="dropdown">
-                <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
-                Equipos Disponibles
-                </button>
-                <span id="dropdownItem">
-                    <div class="dropdown-menu">
-                    <a class="dropdown-item" href="maquinas.html">Máquinas</a>
-                    <a class="dropdown-item" href="trailers.html">Trailers</a>
-                    <a class="dropdown-item" href="camiones.html">Camiones</a>
-                    </div>
-                </span>
-            </span>
-            <a type="button" class="btn btn-primary" href="contacto.html">Nuestra Empresa</a>
-            <a type="button" class="btn btn-primary" href="empresa.html">Contacto</a>
-        </div>
-    </div>
-        <hr>
+            <div id="nav">
+                <div class="navegacion">
+                    <span class="dropdown">
+                        <button type="button" id="botonesMenu" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                        Equipos Disponibles
+                        </button>
+                        <span id="dropdownItem" id="botonesMenu">
+                            <div class="dropdown-menu" id="botonesMenu">
+                            <a id="botonesMenu" class="dropdown-item" href="maquinas.html">Máquinas</a>
+                            <a id="botonesMenu" class="dropdown-item" href="trailers.html">Trailers</a>
+                            <a id="botonesMenu" class="dropdown-item" href="camiones.html">Camiones</a>
+                            </div>
+                        </span>
+                    </span>
+                    <a type="button" id="botonesMenu" class="btn btn-primary" href="empresa.html">Nuestra Empresa</a>
+                    <a type="button" id="botonesMenu" class="btn btn-primary" href="contacto.html">Contacto</a>
+                </div>
+            </div>
+        <h2>Trailers</h2>
             <p>
                 Contamos con una variedad de trailers reconvertidos para su uso como oficinas, 
                 comedores y otras necesidades. Todos acondicionados y cumpliendo los requerimientos 

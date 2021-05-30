@@ -1,23 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <link rel="stylesheet" href="sass/css/main.css"> <!--Carga de estilo CSS externo-->
+<head>
+    <link rel="stylesheet" href="sass/css/main.css"> <!--Carga de estilo CSS externo-->
+	<meta charset="UTF-8">
+	<title>El Nacimiento</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     
-        <meta charset="UTF-8">
-        <title>El Nacimiento</title>
-    
-        <!--Carga de fuentes web-->
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Parisienne&family=Roboto:wght@300&display=swap" rel="stylesheet">
-        <!--Fin de carga de fuentes web-->
-    <!--Carga Bootstrap-->
+<!--Carga de fuentes web-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Parisienne&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merienda&display=swap" rel="stylesheet">
+<!--Fin de carga de fuentes web-->
+
+<!--Carga Bootstrap-->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 <!--Fin de carga Bootstrap-->
+
 </head>
 <body>
-    <header >
+    <header>
         <span id="logo">
-            <img src="imagenes/logo.jpg" href="index.html" alt="logo">
+            <img src="imagenes/logo.png" href="index.html" alt="logo">
         </span>
         <span>
             <h1 id="titulo"> 
@@ -25,40 +31,39 @@
                 de María Valeria Irastorza
             </h1>
           </span>
-        <span id=datos>
-            <p>
-                General Roca 454 <br>
-                Barrio General Mosconi <br>
-                Comodoro Rivadavia - Chubut <br>
-                27-22323390-8
-            </p>
-          </span>
     </header>
-    <hr>
-    <div id="nav">
-        <div class="navegacion">
-            <span class="dropdown">
-                <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
-                Equipos Disponibles
-                </button>
-                <span id="dropdownItem">
-                    <div class="dropdown-menu">
-                    <a class="dropdown-item" href="maquinas.html">Máquinas</a>
-                    <a class="dropdown-item" href="trailers.html">Trailers</a>
-                    <a class="dropdown-item" href="camiones.html">Camiones</a>
-                    </div>
-                </span>
-            </span>
-            <a type="button" class="btn btn-primary" href="empresa.html">Nuestra Empresa</a>
-            <a type="button" class="btn btn-primary" href="contacto.html">Contacto</a>
-        </div>
-    </div>
-    <h2>Empresa</h2>
-            <hr>
-            <!--Carrusel de imagenes correspondientes-->
-            <h3>¿Quienes somos?</h3>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce elit lacus, mollis sit amet sagittis at, convallis et arcu. Maecenas aliquet, lorem a euismod pellentesque, metus lorem viverra justo, vitae vulputate nibh neque non purus. Integer euismod iaculis cursus. Cras fermentum faucibus odio eu varius. Curabitur et commodo libero. Nulla consectetur tortor vel purus convallis, consequat tempor elit tempor. Duis pulvinar leo nec tellus imperdiet, sed malesuada diam tempus. Nulla mattis mauris eu dolor fermentum tristique.        </p>
+            <div id="nav">
+                <div class="navegacion">
+                    <span class="dropdown">
+                        <button type="button" id="botonesMenu" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                        Equipos Disponibles
+                        </button>
+                        <span id="dropdownItem" id="botonesMenu">
+                            <div class="dropdown-menu" id="botonesMenu">
+                            <a id="botonesMenu" class="dropdown-item" href="maquinas.html">Máquinas</a>
+                            <a id="botonesMenu" class="dropdown-item" href="trailers.html">Trailers</a>
+                            <a id="botonesMenu" class="dropdown-item" href="camiones.html">Camiones</a>
+                            </div>
+                        </span>
+                    </span>
+                    <a type="button" id="botonesMenu" class="btn btn-primary" href="empresa.html">Nuestra Empresa</a>
+                    <a type="button" id="botonesMenu" class="btn btn-primary" href="contacto.html">Contacto</a>
+                </div>
+            </div>
+    <h2>¿Quienes somos?</h2>
+                <p class="empresa">
+                    El Nacimiento se origina principalmente con el estímulo familiar de aportar capital 
+                    de trabajo al crecimiento industrial de nuestra localidad y aprovechar nuestras 
+                    fortalezas internas como una amplia experiencia en equipos viales, su mantenimiento, 
+                    onamiento y logística y  el acompañamiento en la organización administrativa e 
+                    impositiva que teníamos para aportar. 
+                    Luego, atentos a las necesidades de la estructura dinámica de la  economía local  
+                    se incorporaron a la actividad principal otros bienes, como flota de camiones y 
+                    módulos transportables, así como también otras herramientas industriales, que nos 
+                    permiten hoy, próximos a cumplir una década de trayectoria en este segmento del 
+                    desarrollo económico, seguir respondiendo y generando confianza y motivación en 
+                    nuestros clientes a través de  más de una docena de unidades a disposición de los 
+                    distintos requerimientos. 
                 </p>    
             <h3>Nuestra historia</h3>
                 <ul>

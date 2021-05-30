@@ -1,6 +1,6 @@
 header{
     grid-area: header;
-    background-color:  rgb(3, 3, 102);
+    background-color:  rgb(221, 111, 9);
     border: 1px solid;
     color: white;
     font-family: 'Roboto', sans-serif;
@@ -8,7 +8,7 @@ header{
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-between;
-    align-content: center;
+    align-items: center;
     margin: 0;
     padding: 0;
     text-align: center;
@@ -19,10 +19,15 @@ header{
         display: block;
         margin-left: 0px;
     }
-    div{
+    span{
         align-content: center;
         text-align: center;
         width: 30%;
+        padding: auto;
+        align-items: center;
+        align-content: center;
+        vertical-align: middle;
+
     }
 }
 
@@ -49,12 +54,15 @@ a{
 
 #titulo{
     font-family: 'Parisienne', cursive;
-    color: white;
+    font-family: 'Indie Flower', cursive;
+    color: rgb(16, 16, 122);
     text-align: center;
     font-size: 200%;
-    display: inline;
+    display: inline-block;
     a{
         text-decoration: none;
+        color: rgb(16, 16, 122);
+        font-family: 'Homemade Apple', cursive;
     }
     a:hover{
         transition: 1s;
@@ -163,12 +171,13 @@ button.btn.btn-primary{
     a{
         font-size: 30px;
         transition: 0.5s;
-        background-color: #0d6efd;
         color: white;
+        background-color: rgb(177, 82, 4);
+        border-color: rgb(177, 82, 4);
+        font-family: 'Merienda', cursive;
     }
     a:hover{
-        background-color: #011b41;
-        color: white;
+        font-family: 'Merienda', cursive;
         transition: 1s;
         transform: scale(1.2,1.2);
     }
@@ -246,6 +255,7 @@ p{
     button{
         font-size: 100%;
     }
+    color: white;
 }
 
 footer{
@@ -354,18 +364,31 @@ section{
 
 #logo{
     margin: 0%;
+    ;
     img{
-        display: inline;
-        margin: 0%;
+        display: inline-block;
+        margin: 10px;
+        height: 215px;
     }
 }
 
 #datos{
-    display: inline;
+    display: inline-block;
     p{
         font-size: 175%;
         text-align: center;
         padding: 20px;
     }
 }
+
+#botonesMenu {
+    background-color: rgb(177, 82, 4);
+    border-color: rgb(177, 82, 4);
+    font-family: 'Merienda', cursive;
+}
+
+.empresa {
+    text-align: justify;
+}
+
 

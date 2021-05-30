@@ -1,6 +1,6 @@
 header {
   grid-area: header;
-  background-color: #030366;
+  background-color: #dd6f09;
   border: 1px solid;
   color: white;
   font-family: 'Roboto', sans-serif;
@@ -8,7 +8,7 @@ header {
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: space-between;
-  align-content: center;
+  align-items: center;
   margin: 0;
   padding: 0;
   text-align: center; }
@@ -17,10 +17,14 @@ header {
   header img {
     display: block;
     margin-left: 0px; }
-  header div {
+  header span {
     align-content: center;
     text-align: center;
-    width: 30%; }
+    width: 30%;
+    padding: auto;
+    align-items: center;
+    align-content: center;
+    vertical-align: middle; }
 
 nav {
   grid-area: nav; }
@@ -41,12 +45,15 @@ a {
 
 #titulo {
   font-family: 'Parisienne', cursive;
-  color: white;
+  font-family: 'Indie Flower', cursive;
+  color: #10107a;
   text-align: center;
   font-size: 200%;
-  display: inline; }
+  display: inline-block; }
   #titulo a {
-    text-decoration: none; }
+    text-decoration: none;
+    color: #10107a;
+    font-family: 'Homemade Apple', cursive; }
   #titulo a:hover {
     transition: 1s;
     color: white; }
@@ -136,12 +143,13 @@ button.btn.btn-primary {
 #dropdownItem a {
   font-size: 30px;
   transition: 0.5s;
-  background-color: #0d6efd;
-  color: white; }
+  color: white;
+  background-color: #b15204;
+  border-color: #b15204;
+  font-family: 'Merienda', cursive; }
 
 #dropdownItem a:hover {
-  background-color: #011b41;
-  color: white;
+  font-family: 'Merienda', cursive;
   transition: 1s;
   transform: scale(1.2, 1.2); }
 
@@ -198,7 +206,8 @@ p {
 
 .formulario {
   font-size: 150%;
-  text-align: center; }
+  text-align: center;
+  color: white; }
   .formulario div {
     padding-bottom: 20px; }
   .formulario button {
@@ -274,12 +283,21 @@ section #tecnica {
 #logo {
   margin: 0%; }
   #logo img {
-    display: inline;
-    margin: 0%; }
+    display: inline-block;
+    margin: 10px;
+    height: 215px; }
 
 #datos {
-  display: inline; }
+  display: inline-block; }
   #datos p {
     font-size: 175%;
     text-align: center;
     padding: 20px; }
+
+#botonesMenu {
+  background-color: #b15204;
+  border-color: #b15204;
+  font-family: 'Merienda', cursive; }
+
+.empresa {
+  text-align: justify; }
