@@ -1,7 +1,7 @@
 header {
   grid-area: header;
-  background-color: #dd6f09;
-  border: 1px solid;
+  background-color: #FCCD04;
+  border: hidden;
   color: white;
   font-family: 'Roboto', sans-serif;
   display: flex;
@@ -46,13 +46,16 @@ a {
 #titulo {
   font-family: 'Parisienne', cursive;
   font-family: 'Indie Flower', cursive;
-  color: #10107a;
+  color: black;
   text-align: center;
-  font-size: 200%;
+  font-size: 4vw;
   display: inline-block; }
   #titulo a {
+    font-size: 7vw;
     text-decoration: none;
-    color: #10107a;
+    background: -webkit-linear-gradient(black, white);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     font-family: 'Homemade Apple', cursive; }
   #titulo a:hover {
     transition: 1s;
@@ -60,8 +63,7 @@ a {
 
 body {
   font-family: 'Roboto', sans-serif;
-  color: white;
-  background-image: linear-gradient(to bottom, #030366, #a9a7ee);
+  background-image: linear-gradient(#f78888, #f78880);
   word-spacing: 7px;
   height: auto;
   width: 100%; }
@@ -76,14 +78,20 @@ img {
 
 h2 {
   text-align: center;
-  background-color: #030366;
+  margin: 0%;
+  width: 100vw;
+  background-color: #90ccf4;
   color: white;
-  font-size: 250%; }
+  font-size: 300%;
+  margin-block-start: 0px;
+  margin-block-end: 0px;
+  padding-top: 5px;
+  padding-bottom: 5px; }
 
 h3 {
   font-size: 200%;
-  color: #b6c5da;
-  background: #020b5f;
+  color: white;
+  background-color: #90ccf4;
   text-align: center; }
 
 ul {
@@ -115,13 +123,11 @@ ul {
 
 li {
   display: inline-block;
-  width: 25%;
   position: relative;
   font-size: 14px;
   margin: 20px;
-  border-radius: 25px;
-  background: #020b5f;
-  padding: 20px;
+  background: #5da2d5;
+  padding: 5px;
   color: white; }
 
 a.btn.btn-primary {
@@ -141,11 +147,11 @@ button.btn.btn-primary {
   transition: 1s; }
 
 #dropdownItem a {
-  font-size: 30px;
+  font-size: 2vw;
   transition: 0.5s;
   color: white;
-  background-color: #b15204;
-  border-color: #b15204;
+  background-color: #5da2d5;
+  border-color: #5da2d5;
   font-family: 'Merienda', cursive; }
 
 #dropdownItem a:hover {
@@ -176,8 +182,10 @@ p {
     margin-bottom: auto;
     margin-left: auto;
     margin-right: auto;
-    font-size: 40px;
+    font-size: 6vw;
     text-decoration: underline; }
+  .listaequipos img {
+    width: 80%; }
 
 .tablatecnica {
   margin-right: auto;
@@ -222,7 +230,7 @@ footer {
 #grilla {
   display: inline-grid;
   grid-template-areas: "header header" "nav    nav" "info   info" "equipos    tecnica" "footer footer";
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 50% 50%;
   grid-template-rows: 250px 250px 1fr 1fr 75px; }
 
 section #equipos {
@@ -235,6 +243,50 @@ section #info {
 
 section #tecnica {
   grid-area: tecnica; }
+
+.MuestraIndex {
+  margin-bottom: 10px; }
+
+.navegacion {
+  text-align: center;
+  background-color: #5da2d5; }
+
+.carousel-indicators {
+  visibility: hidden; }
+  .carousel-indicators li {
+    background-color: blue;
+    border-radius: 100%;
+    width: 5px;
+    height: 5px;
+    margin: 5px;
+    padding: 5px; }
+
+#logo {
+  margin: 0%; }
+  #logo img {
+    display: inline-block;
+    margin: 10px;
+    height: 17vw; }
+
+#datos {
+  display: inline-block; }
+  #datos p {
+    font-size: 175%;
+    text-align: center;
+    padding: 20px; }
+
+#botonesMenu {
+  font-size: 2vw;
+  background-color: #5da2d5;
+  border-color: #5da2d5;
+  font-family: 'Merienda', cursive;
+  padding-left: 30px; }
+
+.empresa {
+  text-align: justify; }
+
+.carousel-indicators {
+  visibility: hidden; }
 
 @media only screen and (max-width: 768px) {
   body {
@@ -253,7 +305,33 @@ section #tecnica {
     margin-left: auto;
     margin-right: auto; }
   nav {
-    height: 1000px; } }
+    height: 1000px; }
+  #logo {
+    margin: 0%; }
+    #logo img {
+      display: inline-block;
+      margin: 10px;
+      height: 30vw; }
+  #botonesMenu {
+    margin: 0px;
+    padding: 0px;
+    font-size: 4vw; }
+  h2 {
+    font-size: 5vw; }
+  #dropdownItem a {
+    font-size: 4vw;
+    transition: 0.5s;
+    text-align: center;
+    color: white;
+    background-color: #5da2d5;
+    border-color: #5da2d5;
+    font-family: 'Merienda', cursive; }
+  #dropdownItem a:hover {
+    font-family: 'Merienda', cursive;
+    transition: 1s;
+    transform: scale(1.2, 1.2); }
+  body p {
+    font-size: 4vw; } }
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
   body {
@@ -263,41 +341,29 @@ section #tecnica {
     display: inline-grid;
     text-align: center;
     grid-template-areas: "header" "nav" "info" "equipos" "tecnica" "footer";
-    grid-template-columns: 1fr;
-    grid-template-rows: 500px 200pxpx 1fr 1fr 1fr 75px; } }
-
-.MuestraIndex {
-  margin-bottom: 10px; }
-
-.navegacion {
-  text-align: center; }
-
-.carousel-indicators li {
-  background-color: blue;
-  border-radius: 100%;
-  width: 5px;
-  height: 5px;
-  margin: 5px;
-  padding: 5px; }
-
-#logo {
-  margin: 0%; }
-  #logo img {
-    display: inline-block;
-    margin: 10px;
-    height: 215px; }
-
-#datos {
-  display: inline-block; }
-  #datos p {
-    font-size: 175%;
+    grid-template-columns: 100%;
+    grid-template-rows: 500px 200px 1fr 1fr 1fr 75px; }
+  #logo {
+    margin: 0%; }
+    #logo img {
+      display: inline-block;
+      margin: 10px;
+      height: 30vw; }
+  #botonesMenu {
+    margin: 0px;
+    padding: 0px;
+    font-size: 4vw; }
+  h2 {
+    font-size: 5vw; }
+  #dropdownItem a {
+    font-size: 4vw;
     text-align: center;
-    padding: 20px; }
-
-#botonesMenu {
-  background-color: #b15204;
-  border-color: #b15204;
-  font-family: 'Merienda', cursive; }
-
-.empresa {
-  text-align: justify; }
+    transition: 0.5s;
+    color: white;
+    background-color: #5da2d5;
+    border-color: #5da2d5;
+    font-family: 'Merienda', cursive; }
+  #dropdownItem a:hover {
+    font-family: 'Merienda', cursive;
+    transition: 1s;
+    transform: scale(1.2, 1.2); } }
