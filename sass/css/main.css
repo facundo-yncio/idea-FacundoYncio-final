@@ -1,3 +1,8 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0; }
+
 header {
   grid-area: header;
   background-color: #FCCD04;
@@ -97,7 +102,6 @@ h3 {
 ul {
   list-style: none;
   font-size: 100%;
-  min-width: 300px;
   padding-top: 20px;
   padding-bottom: 20px;
   text-align: center;
@@ -120,6 +124,16 @@ ul {
     color: white;
     font-size: 30px;
     text-decoration: none; }
+
+#años ul {
+  padding-inline-start: 0px; }
+
+#años li {
+  font-size: 3vw;
+  width: 80%; }
+
+#años p {
+  padding: 0px; }
 
 li {
   display: inline-block;
@@ -174,7 +188,7 @@ p {
   padding: 20px; }
 
 .listaequipos {
-  font-size: 150%;
+  font-size: 100%;
   list-style: none; }
   .listaequipos li {
     display: inline-block;
@@ -182,7 +196,7 @@ p {
     margin-bottom: auto;
     margin-left: auto;
     margin-right: auto;
-    font-size: 6vw;
+    font-size: 4vw;
     text-decoration: underline; }
   .listaequipos img {
     width: 80%; }
@@ -283,7 +297,9 @@ section #tecnica {
   padding-left: 30px; }
 
 .empresa {
-  text-align: justify; }
+  text-align: justify;
+  padding-left: 8vw;
+  padding-right: 8vw; }
 
 .carousel-indicators {
   visibility: hidden; }
@@ -298,12 +314,14 @@ section #tecnica {
     grid-template-areas: "header" "nav" "info" "equipos" "tecnica" "footer";
     grid-template-columns: 100%;
     grid-template-rows: 500px 500px 1fr 1fr 1fr 75px; }
-  ul li {
-    display: block;
-    width: 1fr;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto; }
+  ul {
+    min-width: 0px; }
+    ul li {
+      display: block;
+      width: 1fr;
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto; }
   nav {
     height: 1000px; }
   #logo {
@@ -331,7 +349,25 @@ section #tecnica {
     transition: 1s;
     transform: scale(1.2, 1.2); }
   body p {
-    font-size: 4vw; } }
+    font-size: 4vw; }
+  #años li {
+    font-size: 6vw;
+    width: 80%; }
+  .listaequipos {
+    font-size: 150%;
+    list-style: none; }
+    .listaequipos li {
+      display: inline-block;
+      margin-top: auto;
+      margin-bottom: auto;
+      margin-left: auto;
+      margin-right: auto;
+      font-size: 6vw;
+      text-decoration: underline; }
+    .listaequipos img {
+      width: 80%; }
+  .tablatecnica {
+    font-size: 3vw; } }
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
   body {
@@ -366,4 +402,22 @@ section #tecnica {
   #dropdownItem a:hover {
     font-family: 'Merienda', cursive;
     transition: 1s;
-    transform: scale(1.2, 1.2); } }
+    transform: scale(1.2, 1.2); }
+  #años li {
+    font-size: 6vw;
+    width: 80%; }
+  .listaequipos {
+    font-size: 150%;
+    list-style: none; }
+    .listaequipos li {
+      display: inline-block;
+      margin-top: auto;
+      margin-bottom: auto;
+      margin-left: auto;
+      margin-right: auto;
+      font-size: 6vw;
+      text-decoration: underline; }
+    .listaequipos img {
+      width: 80%; }
+  .tablatecnica {
+    font-size: 4vw; } }

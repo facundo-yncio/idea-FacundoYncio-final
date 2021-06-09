@@ -7,7 +7,6 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build-css": "node-sass --include-path scss sass/scss/style.scss sass/css/main.css",
     "watch-css": "nodemon -e scss -x \"npm run build-css\""
-
   },
   "author": "Facundo Ramón Yncio",
   "license": "ISC",
